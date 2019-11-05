@@ -1,10 +1,10 @@
-package com.nbd.rest;
+package nbd.example.demo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class RestApplicationTests {
+class DemoApplicationTests {
 
 	@Test
 	void contextLoads() {
