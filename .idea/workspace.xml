@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08615d4c-e005-48ed-95f2-b8d6c486d09c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/nbdrest.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data.csv" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +64,8 @@
       <updated>1573251964087</updated>
       <workItem from="1573251969362" duration="930000" />
       <workItem from="1573253152454" duration="45000" />
-      <workItem from="1573253738695" duration="6212000" />
+      <workItem from="1573253738695" duration="6368000" />
+      <workItem from="1573313582067" duration="2398000" />
     </task>
     <servers />
   </component>
