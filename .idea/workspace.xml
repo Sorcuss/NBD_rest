@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08615d4c-e005-48ed-95f2-b8d6c486d09c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nbd/config/SwaggerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/demo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nbd/controllers/AccidentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nbd/controllers/AccidentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nbd/controllers/AccidentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nbd/controllers/AccidentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +72,7 @@
       <workItem from="1573253152454" duration="45000" />
       <workItem from="1573253738695" duration="6368000" />
       <workItem from="1573313582067" duration="14242000" />
-      <workItem from="1573471331698" duration="9885000" />
+      <workItem from="1573471331698" duration="10101000" />
     </task>
     <servers />
   </component>

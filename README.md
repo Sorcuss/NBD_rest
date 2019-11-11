@@ -1,7 +1,7 @@
 # REST API NBD
 ## Docker
 ```
-docker run --name [machine name] --network host -d -e CASSANDRA_LISTEN_ADDRES=[your docker ip] -e CASSANDRA_SEEDS=[your docker ip] cassandra:latest
+docker run --name [machine name] --network host -d -e CASSANDRA_LISTEN_ADDRESS=[your docker ip] -e CASSANDRA_SEEDS=[your docker ip] cassandra:latest
 ```
 
 ## Import data.csv to cassandra
@@ -19,4 +19,9 @@ docker exec -it [machine-name] cqlsh
 ####Import data from CSV to cassandra
 ```aidl
 COPY test.accidents FROM '[path-to-csv-file]' WITH DELIMITER=';' AND HEADER=TRUE;
+```
+
+####Open RESTful API documentation
+```aidl
+http://localhost:8080/swagger-ui.html#/
 ```
