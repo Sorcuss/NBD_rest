@@ -43,12 +43,7 @@ public class AccidentController {
             @ApiResponse(code = 400, message = "Bad request")
     })
     public ResponseEntity<Void> addAccidents(@RequestBody Accident accident) {
-        if(accident.getAccidentIndex() == null || accident.getAccidentIndex().equals(""))
-            accident.setAccidentIndex(UUID.randomUUID().toString());
-        Accident addedAccident = accidentRepository.save(accident);
-        if(addedAccident == null){
-            return new ResponseEntity<Void>(HttpStatus.BAD_REQUEST);
-        }
+        accidentRepository.save(accident);
         return new ResponseEntity<Void>(HttpStatus.CREATED);
     }
 
