@@ -1,0 +1,5 @@
+com\nbd\repositories\AccidentRepository.class
+com\nbd\controllers\AccidentController.class
+com\nbd\models\Accident.class
+com\nbd\config\SwaggerConfig.class
+com\nbd\NbdRestApplication.class
