@@ -1,10 +1,13 @@
 package com.nbd.config;
+import com.datastax.driver.core.PlainTextAuthProvider;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.cassandra.config.AbstractClusterConfiguration;
 import org.springframework.data.cassandra.config.CassandraClusterFactoryBean;
+import org.springframework.data.cassandra.core.cql.QueryOptions;
 import org.springframework.data.cassandra.core.cql.keyspace.CreateKeyspaceSpecification;
+import org.springframework.data.cassandra.core.cql.keyspace.DataCenterReplication;
 import org.springframework.data.cassandra.core.cql.keyspace.KeyspaceOption;
 
 import java.util.ArrayList;
@@ -51,13 +54,11 @@ public class ClusterConfig extends AbstractClusterConfiguration {
         bean.setSpeculativeExecutionPolicy(getSpeculativeExecutionPolicy());
         bean.setSocketOptions(getSocketOptions());
         bean.setTimestampGenerator(getTimestampGenerator());
-
         bean.setKeyspaceCreations(getKeyspaceCreations());
         bean.setKeyspaceDrops(getKeyspaceDrops());
         bean.setStartupScripts(getStartupScripts());
         bean.setShutdownScripts(getShutdownScripts());
         bean.setJmxReportingEnabled(false);
-
 
         return bean;
     }
@@ -68,7 +69,7 @@ public class ClusterConfig extends AbstractClusterConfiguration {
                 CreateKeyspaceSpecification.createKeyspace(keyspace)
                         .ifNotExists()
                         .with(KeyspaceOption.DURABLE_WRITES, true)
-                        .withSimpleReplication(replicationFactor);
+                        .withNetworkReplication(DataCenterReplication.of("dc1",replicationFactor), DataCenterReplication.of("dc2", replicationFactor));
         List<CreateKeyspaceSpecification> result = new ArrayList<>();
         result.add(specification);
         return result;
@@ -78,4 +79,6 @@ public class ClusterConfig extends AbstractClusterConfiguration {
     protected String getContactPoints() {
         return hosts;
     }
+
+
 }

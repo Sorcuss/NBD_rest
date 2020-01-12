@@ -1,5 +1,7 @@
+C:\sem_V\NBD_rest\src\main\java\com\nbd\config\ClusterConfig.java
 C:\sem_V\NBD_rest\src\main\java\com\nbd\models\Accident.java
 C:\sem_V\NBD_rest\src\main\java\com\nbd\repositories\AccidentRepository.java
 C:\sem_V\NBD_rest\src\main\java\com\nbd\NbdRestApplication.java
 C:\sem_V\NBD_rest\src\main\java\com\nbd\config\SwaggerConfig.java
 C:\sem_V\NBD_rest\src\main\java\com\nbd\controllers\AccidentController.java
+C:\sem_V\NBD_rest\src\main\java\com\nbd\config\RetryingCassandraClusterFactoryBean.java
